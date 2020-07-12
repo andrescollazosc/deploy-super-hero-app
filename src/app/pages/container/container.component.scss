@@ -1,0 +1,13 @@
+.content {
+  margin-bottom: 3rem;
+}
+
+.between-space {
+  padding-right: 3rem;
+}
+
+.between-bottom {
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}

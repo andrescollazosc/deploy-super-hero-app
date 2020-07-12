@@ -1,0 +1,26 @@
+<h2 class="text-center content">Mis Componentes</h2>
+
+<h3>Cards</h3>
+
+<div class="row">
+  <div
+    class="col-12 col-sm-12 col-md-6 col-lg-4 between-bottom"
+    *ngFor="let superHero of superHeroItems"
+  >
+    <app-card-people
+      [configCard]="superHero"
+      (resultEmit)="showResult($event)"
+    ></app-card-people>
+  </div>
+</div>
+
+<hr />
+
+<!-- Modal -->
+<h3>Modals</h3>
+
+<div class="row">
+  <div class="col" *ngFor="let item of configModalItems">
+    <app-modal-primary [configModalPrimary]="item"></app-modal-primary>
+  </div>
+</div>

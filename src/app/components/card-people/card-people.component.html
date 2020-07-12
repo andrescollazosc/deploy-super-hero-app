@@ -1,0 +1,16 @@
+<!-- style="width: 18rem;" -->
+
+<div class="card">
+  <img
+    [src]="configCard.src"
+    class="card-img-top img-style"
+    alt="..."
+  />
+  <div class="card-body">
+    <h5 class="card-title">{{ configCard.title }}</h5>
+    <p class="card-text">
+      {{ configCard.history }}
+    </p>
+    <button (click)="onClick()" [class]="configCard.colorButtom">{{ configCard.labelButtom }}</button>
+  </div>
+</div>
